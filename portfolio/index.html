@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-purple-700 text-white p-4 text-center text-xl font-bold">
+  My Portfolio
+</nav>
+
+<section class="text-center p-10">
+  <h1 class="text-3xl font-bold">Hi, I'm a Web Developer</h1>
+  <p class="mt-2">HTML | Tailwind | JavaScript</p>
+</section>
+
+<section class="p-6 grid md:grid-cols-3 gap-4">
+  <div class="bg-white p-4 shadow">Project 1</div>
+  <div class="bg-white p-4 shadow">Project 2</div>
+  <div class="bg-white p-4 shadow">Project 3</div>
+</section>
+
+<section class="p-6">
+  <h2 class="text-3xl text-center font-bold mb-8">Contact Me</h2>
+  <form onsubmit="return validateForm()" class="space-y-3">
+    <input id="name" class="border p-2 w-full" placeholder="Name">
+    <input id="email" class="border p-2 w-full" placeholder="Email">
+    <textarea id="msg" class="border p-2 w-full" placeholder="Message"></textarea>
+    <button class="bg-purple-700 text-white px-4 py-2">Submit</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

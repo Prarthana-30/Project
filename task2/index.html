@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Landing Page</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-pink-500 text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Online Shopping Store</h1>
+    <p class="mt-2">Best deals at best prices</p>
+  </header>
+
+  <!-- Main Section -->
+  <section class="p-6 grid md:grid-cols-3 gap-6">
+
+    <!-- Product Card -->
+    <div class="bg-white p-4 shadow rounded text-center">
+      <h2 class="font-bold text-lg">Product 1</h2>
+      <p class="text-gray-600">₹999</p>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-3 rounded">
+        Buy Now
+      </button>
+    </div>
+
+    <div class="bg-white p-4 shadow rounded text-center">
+      <h2 class="font-bold text-lg">Product 2</h2>
+      <p class="text-gray-600">₹1499</p>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-3 rounded">
+        Buy Now
+      </button>
+    </div>
+
+    <div class="bg-white p-4 shadow rounded text-center">
+      <h2 class="font-bold text-lg">Product 3</h2>
+      <p class="text-gray-600">₹1999</p>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-3 rounded">
+        Buy Now
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Interactive Section -->
+  <section class="text-center p-6">
+    <button onclick="toggleOffer()"
+      class="bg-green-500 text-white px-6 py-2 rounded">
+      Show Today's Offer
+    </button>
+
+    <p id="offerText" class="hidden text-red-600 font-bold mt-4">
+      🎉 Flat 50% OFF on all products today!
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
